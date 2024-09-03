@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio Landing Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"rel="stylesheet'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+      </div>
+      
+      <!-- Header -->
+      <nav class="navbar">
+        <div class="max-width">
+          <div class="logo"><a href="#"><span>NAZIYA</span><span>.com</span></a></div>
+          <ul class="menu">
+            <li><a href="#home" class="menu-btn"><strong>Home</strong></a></li>
+            <li><a href="#about" class="menu-btn"><strong>About</strong></a></li>
+            <li><a href="#Skills" class="menu-btn"><strong>Skills</strong></a></li>
+            <li><a href="#projects" class="menu-btn"><strong>Projects</strong></a></li>
+            <li><a href="#contact" class="menu-btn"><strong>Contact</strong></a></li>
+          </ul>
+          <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+
+
+  <!-- Home -->
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1">Hello, This is</div>
+        <div class="text-2">Naziya Saher</div>
+        <div class="text-3">And I'm a <span class="typing"></span></div>
+        <a href="#contact">Hire me</a>
+    </div>
+    </div>
+  </section>
+
+
+
+      <!--  About  -->
+      <section class="about" id="about">
+        <div class="max-width">
+          <h2 class="title">About Me</h2>
+          <div class="about-content">
+            <div class="column left">
+              <img src="naaz2.jpg" alt="Profile Image 626x626">
+            </div>
+            <div class="column right">
+              <div class="text">I'm Naziya and I'm a <span class="typing-2"></span></div>
+              <p>Seeking an entry-level opportunity with an esteemed organization where I can utilize my skills & enhance learning in the field of work. Capable of mastering new technologies.</p>
+              <br>
+
+        
+          <div class="tab-container">
+            <button class="navi-blue tab-links active-link" onclick="opentab('ex')">Experience</button>
+            <button class="navi-blue tab-links" onclick="opentab('edu')">Education</button>
+            <a href="Naziya Saher.pdf" target="blank" id="navi-blue-cv">Download CV</a>
+        
+            <div class="tab-contents active-tab" id="ex">
+              <div class="text">INTERNSHIP Experience</div>
+              <p>
+                  <li class="intern text">Nil-tech Edu company (Feb - March 2023)</li>
+                  <p>
+                      • Worked on developing a web application for streamlining internal processes.<br>
+                      • Collaborated with a team of developers and designers to ensure timely delivery of the project.
+                  </p>
+                  <li class="intern text">Kodnest Technologies (July 2024 - pursuing)</li>
+                  <p>
+                      • Acquired practical skills in Java, MySQL, and Frontend Technologies.<br>
+                      • Contributed to real-world projects and learned directly from industry professionals.
+                  </p>
+              </p>
+          </div>
+          
+        
+            <div class="tab-contents" id="edu">
+              <ul>
+                <li><b>B.E(VTU)<span id="year">2023</span></b><br>Guru Nanak Dev Engineering college, Bidar<br>7.77 CGPA</li>
+                <li><b>12th<span id="yr">2019</span></b><br>Wisdom PU college, Bidar<br>67.83%</li>
+                <li><b>10th<span id="yr">2017</span></b><br>Govt High School, Bagdal<br>73.76%</li>
+              </ul>
+            </div>
+          </div>
+        
+          <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+        
+            function opentab(tabname) {
+              for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+              }
+        
+              for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+              }
+        
+              event.currentTarget.classList.add("active-link");
+              document.getElementById(tabname).classList.add("active-tab");
+            }
+          </script>
+        </section>
+              
+            
+
+<!-- Skllis -->
+
+    <section class="skills" id="Skills">
+       <div class="max-width">
+                <div class="container">
+                  <h1 class="title" style="text-align: center; font-family: Ubuntu, 
+                  sans-serif; position: relative;font-size: 
+                  40px;font-weight: 500; color: #333;">Technical Skills</h1>
+
+                  <div class="about-content">
+                    
+                    <div class="col">
+
+                    <h2 class="plataformas titulo skill-h2" >Programming languages</h2>
+                    <ul class="skill">
+                      <li><span class="greenline wordpress"></span><em style="font-size: 15px; color: black;">Java Standard Edition</em></li>
+                      <li><span class="greenline prestashop"></span><em style="font-size: 15px; color: black;">Advance Java</em></li>
+                      <li><span class="greenline joomla"></span><em style="font-size: 15px; color: black;">Hibernate</em></li>
+                      <li><span class="greenline blogger"></span><em style="font-size: 15px; color: black;">Spring</em></li>
+                      <li><span class="greenline blogger"></span><em style="font-size: 15px; color: black;">SQL</em></li>
+                      <!-- <li><span class="greenline tridion"></span><em style="font-size: 15px; color: black;">Spring Boot</em></li> -->
+                    </ul>
+                  </div>
+
+                  <div class="col">
+                    <h2 class="titulo skill-h2">Web Development</h2>
+                    <ul class="skill">
+                      <li><span class="blueline html"></span><em style="font-size: 15px; color: black;">HTML</em></li>
+                      <li><span class="blueline css"></span><em style="font-size: 15px; color: black;">CSS</em></li>
+                      <!-- <li><span class="blueline javascript"></span><em style="font-size: 15px; color: black;">Javascript</em></li>  -->
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+           </div>
+    </section>
+                
+              
+                
+                <nav class="projects" id="projects">
+                  <div class="max-width">
+                    <h2 id="pro">PROJECT</h2>
+                    <ul class="project-list">
+                      <li class="project">Portfolio (HTML, CSS, JavaScript).</li>
+                      <li class="project">Digitalization of Forensic Evidence Management system through Blockchain Technology (Final Project).</li>
+                      <li class="project">Text Editor(HTML CSS mini project) </li>
+                      <li class="project">Employee Payroll system(JSE mini project).</li>
+                    </ul>
+                  </div>
+                </nav>
+       
+
+      
+ 
+        
+   <!-- Main Projects Section   -->
+   <body class="new-proj"> 
+  <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="carousel owl-carousel">
+                                      
+              <!-- Project Cards Go Here  -->
+
+                <div class="card">
+                    <div class="box" >
+                        <img src="https://media.istockphoto.com/id/1134455791/photo/payroll-concept.jpg?s=612x612&w=0&k=20&c=CKJsCRMeTG5Hh08bRpxX9qMVrIW7FnUWTYm_YjYlPGI=" alt="">
+                        <div class="new-text">Employee Payroll system</div>
+                        <p class="new-para">Click below for more</p>
+                        <a href="https://github.com/NaziyaSaher/Employee-Payroll-system" class="git"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                  <div class="box" >
+                      <img src="https://designnotes.blog.gov.uk/wp-content/uploads/sites/53/2020/06/Portfolio-Desk.jpg" alt="">
+                      <div class="new-text">Portfolio</div>
+                      <p class="new-para">Click below for more</p>
+                      <a href="https://github.com/NaziyaSaher/Portfolio" class="git"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+              </div>
+
+
+              <div class="card">
+                <div class="box" >
+                    <img src="https://onlinetexteditor.org/assets/banner.png" alt="">
+                    <div class="new-text">Text Editor</div>
+                    <p class="new-para">Click below for more</p>
+                    <a href="https://github.com/NaziyaSaher/Text-Editor" class="git"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+
+            <div class="card">
+              <div class="box" >
+                  <img src="https://images.shiksha.com/mediadata/images/articles/1571380301phpj0JLBj.jpeg" alt="">
+                  <div class="new-text">Forensic Evidence Management system</div>
+                  <p class="new-para">Click below for more</p>
+                  <a href="https://github.com/NaziyaSaher/Main-Project" class="git"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+          </div>
+
+               
+
+            </div>
+        </div>
+    </section> 
+
+   
+
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <div class="max-width">
+          <h2 class="title">Contact Me</h2>
+          <div class="contact-content">
+            <div class="column left">
+              <div class="text">Get in Touch</div>
+              <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be a part of your visions. Email me with any questions or inquiries. I'll happy to answer your questions and set up a meeting with you.</p>
+              <div class="icons">
+
+                <a href="#">
+                  <div class="row">
+                    <i class="fa-solid fa-user-large"></i>
+                    <div class="info">
+                      <div class="head" style="color: black;"> Name : <label style="color: #686262;" id="con-lab"> Naziya Saher</label> </div>
+                    </div>
+                  </div>
+                </a>
+
+                <div class="row">
+                  <i class="fa-solid fa fa-whatsapp"></i>
+                  <div class="info">
+                    <div class="head" style="color: black;"> Contact number : <label style="color: #686262;" id="con-lab"> 8073631292</label></div>
+                   
+                  </div>
+                </div>
+
+                <div class="row">
+                  <i class="fa-solid fa-envelope"></i>
+                  <div class="info">
+                    <div class="head" style="color: black;">Email : <label style="color: #686262;" id="con-lab"> naziyasaher786@gmail.com</label></div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div class="info">
+                    <div class="head" style="color: black;"> Address : <label style="color: #686262;" id="con-lab"> Bidar, Karnataka, India 545801 </div>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <i class="bi bi-translate"></i>
+                  <div class="info">
+                    <div class="head" style="color: black;"> Languages Known : <label style="color: #686262;" id="con-lab"> Urdu, English</div>
+                    <!-- <div class="sub-title"> Urdu, English</div> -->
+                  </div>
+                </div>
+
+                <br>
+                <!-- Social -->
+                <div class="social-menu">
+                  <ul>
+                    <li><a href="https://github.com/NaziyaSaher"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/naziyasaher/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reach -->
+            <div class="column right">
+              <div class="text">Message me</div>
+
+              <form name="submit-to-google-sheet">
+                <div class="fields">
+                  <div class="field name">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                  </div>
+                  <div class="field email">
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="field">
+                  <input type="text" name="Subject" placeholder="Subject" required>
+                </div>
+                <div class="field textarea">
+                  <textarea cols="30" rows="10" name="Message" placeholder="Message.." required></textarea>
+                </div>
+                <div class="button-area">
+                  <button type="submit">Send message</button>
+                </div>
+              </form>
+
+              <span id="msg"> </span>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+                <br>
+
+
+      <!-- Footer -->
+      <footer>
+        <span>
+          <a href="#"> Naziya Saher</a> | <span class="far fa-copyright"></span> 2023 All Rights Reserved. Privacy Policy
+        </span>
+      </footer>
+      <script src='https://kit.fontawesome.com/3b57a2a2a7.js'></script>
+      <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+      <script src="script.js"></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxu4pUpYBrrlX-WAiPnkFBHXVetZ6LZky2zkk6jZf7EMCXxeW3dccC2BjENj6vX5JX9Rw/exec'
+      const form = document.forms['submit-to-google-sheet']
+     
+      const msg= document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+
+            msg.innerHTML="Messages sent successfully"
+            setTimeout(function(){
+              msg.innerHTML=""
+            },5000)
+            form.reset() 
+          })
+          
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
